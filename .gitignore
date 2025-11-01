@@ -1,0 +1,31 @@
+# Arquivo .gitignore para projeto Node.js + TypeScript
+
+# 1. Dependências
+# Ignora a pasta que contém todos os pacotes baixados
+node_modules/
+
+# 2. Saída do TypeScript (Arquivos Gerados pela Compilação)
+# Conforme solicitado, ignora os arquivos JS, Maps e Declarações
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# 3. Arquivos de Log
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# 4. Arquivos de Ambiente
+# Nunca envie arquivos .env, pois eles contêm senhas
+.env
+.env.local
+.env.*.local
+
+# 5. Configurações de Editor
+# Ignora configurações locais do VSCode
+.vscode/
+
+# 6. Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
