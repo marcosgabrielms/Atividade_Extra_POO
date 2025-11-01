@@ -4,7 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "_comment_build": "Compila os arquivos .ts para .js",
+    "build": "tsc",
+
+    "_comment_start": "Executa o app.js",
+    "start": "node app.js",
+
+    "_comment_dev": "Compila e executa o projeto",
+    "dev": "npm run build && npm run start"
   },
   "keywords": [],
   "author": "",
@@ -16,4 +25,5 @@
   "devDependencies": {
     "@types/prompt-sync": "^4.2.3"
   }
+  
 }
